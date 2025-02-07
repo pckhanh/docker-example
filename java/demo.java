@@ -16,7 +16,7 @@ public class demo {
             public void handle(HttpExchange exchange) throws IOException {
                 // Set the response headers
                 exchange.getResponseHeaders().set("Content-Type", "text/html");
-                String htmlResponse = "<html><body><h1>Docker Java Demo App</h1></body></html>";
+                String htmlResponse = "<html><body><h1>Demo Java App</h1></body></html>";
                 exchange.sendResponseHeaders(200, htmlResponse.length());
                 
                 // Get the response body stream
